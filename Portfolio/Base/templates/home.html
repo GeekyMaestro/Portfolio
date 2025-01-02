@@ -1,0 +1,218 @@
+{%load static%}
+<!DOCTYPE html>
+<html language="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="{%static 'images/dog1.jpg'%}">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <!-- <li><a href="#home" class="t-white roboto">Home<i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About Me<i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills<i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#projects" class="t-white roboto">Projects<i class="fa-solid fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact Me<i class="fa-solid fa-rocket"></i></a></li> -->
+
+                <li><a href="#home" class="t-white roboto"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                <li><a href="#about" class="t-white roboto"><i class="fa-solid fa-user"></i><span>About Me</span></a></li>
+                <li><a href="#skills" class="t-white roboto"><i class="fa-solid fa-code"></i><span>Skills</span></a></li>
+                <li><a href="#projects" class="t-white roboto"><i class="fa-solid fa-project-diagram"></i><span>Projects</span></a></li>
+                <li><a href="#Contact" class="t-white roboto"><i class="fa-solid fa-rocket"></i><span>Contact Me</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- home section -->
+
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppins">Hey there, I'm</h6>
+                <h1 class="t-white">Harii</h1>
+                <h4 class="poppins">A Software Engineer</h4>
+                <a href="{%static 'pdf/Student.pdf'%}" target="_blank">
+                    <button class="btn poppins">Resume</button>
+                </a>
+                <a class="btn live poppins" id="hireme" href="https://www.linkedin.com/in/hari-k-reddy-1ab588192" target="_blank">Lets Talk</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center" id="mainimage">
+                <img src="{%static 'images/avatar.avif'%}" alt="image">
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around">
+            <div class="about-left flex s-center items-center">
+                <img src="{%static 'images/myself.JPG'%}" alt="Image">
+            </div>
+            <div class="about-right flex">
+                <div class="about-content">
+                    <!-- <h1 class="t-white m-b-1 poppins">Hello Again!</h1> -->
+                    <p class="t-white poppins">I’m a Linux Admin with expertise in system administration, networking, and full-stack development. I graduated in 2022 with a B.Tech in Computer Engineering and have since gained diverse experience at Capgemini, working as a Network Engineer and intern with a focus on Java and AngularJS.
+                        <br><br>
+                        Prior to my corporate career, I built and maintained a school website for three years using the LAMP stack with WordPress, showcasing my ability to manage end-to-end projects.
+                        <br><br>
+                        My passion for technology began in school, where I explored robotics, 3D modeling, and game development. Highlights include winning the NASSCOM Game Jam Titans (city level) and attending a national game development conference.
+                        <br><br>
+                        In my free time, I create Python-based web and data analytics projects, constantly exploring innovative solutions to real-world challenges.</p>
+                    <!-- <a href="btn" id="hireme">Hire Me</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section -->
+
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50">
+            <div class="skills-left flex s-center items-center">
+                <img src="{%static 'images/skills1.png'%}" alt="Image">
+            </div>
+
+            <!-- <div class="skill-badges">
+                <span class="badge">Core Java - 50%</span>
+                <span class="badge">HTML - 80%</span>
+                <span class="badge">CSS - 60%</span>
+                <span class="badge">Python - 70%</span>
+                <span class="badge">SQL - 70%</span>
+            </div> -->
+
+            <div class="skills-cards">
+                <div class="card card-css">
+                    <h3>Linux</h3>
+                    <p>Ubuntu<br>RedHat<br>AWS Linux</p>
+                </div>
+                <div class="card card-html">
+                    <h3>HTML & CSS</h3>
+                </div>
+                
+                <div class="card card-python">
+                    <h3>Python</h3>
+                    <p>Web_Development<br>Data Analytics<br>Machine Learning</p>
+                </div>
+                <div class="card card-java">
+                    <h3>AWS</h3>
+                    <p>EC-2<br>Route53<br>S3 Buckets<br>IAM</p>
+                </div>
+                <div class="card card-sql">
+                    <h3>SQL</h3>
+                    <p>MySQL<br>MongoDB</p>
+                </div>
+                <div class="card card-network">
+                    <h3>Network Engineering</h3>
+                    <p>Firewalls (ACL, Administration)<br>Routing Switching<br>UAM</p>
+                </div>
+                <div class="card card-others">
+                    <h3>Other Tools</h3>
+                    <p>Telecom Basics<br>Autodesk Maya<br>Adobe CC<br>MS Office<br>Unity Engine</p>
+                </div>
+                
+            </div>
+
+
+            <!-- <div class="skills-right flex items-center">
+                <div class="skills-container">
+                    <div class="java bar p-relative"><span class="bar content left t-white">Core Java</span><span class="bar content right-skills t-white">70%</span></div>
+                    <div class="html bar p-relative"><span class="bar content left t-white">HTML</span><span class="bar content right-skills t-white">80%</span></div>
+                    <div class="css bar p-relative"><span class="bar content left t-white">CSS</span><span class="bar content right-skills t-white">60%</span></div>
+                    <div class="python bar p-relative"><span class="bar content left t-white">Python</span><span class="bar content right-skills t-white">70%</span></div>
+                    <div class="sql bar p-relative"><span class="bar content left t-white">SQL</span><span class="bar content right-skills t-white">70%</span></div>  
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- projects section -->
+
+    <section id="projects">
+        <h1 class="t-center my-2 t-white f-2">Projects</h1>
+        <div class="project-container flex s-center">
+            <div class="project-item flex f-col s-center items-center">
+                <h2 class="t-white poppins">School Website</h2>
+                <p class="t-white poppins">The website was developed using the LAMP stack (Linux, Apache, MySQL, and PHP) and built with WordPress to provide a dynamic and easily manageable content management system. It's hosted on Amazon AWS EC-2 Instance.</p>
+                <div class="button flex s-around">
+                    <a href="https://wpps.in" target="_blank" class="btn mx-1 m-top">Project Website</a>
+                </div>
+            </div>
+
+            <div class="project-item flex f-col s-center items-center">
+                <h2 class="t-white poppins">Portfolio</h2>
+                <p class="t-white poppins">The website is developed using Django for the backend, SQLite as the database, and HTML/CSS for the frontend. It includes user authentication, form handling, and dynamic data rendering. It is hosted on PythonAnywhere.</p>
+                <div class="button flex s-around">
+                    <a href="" target="_blank" class="btn mx-1 m-top">Project Website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact me section -->
+
+    <section id="Contact" class="m-b-1">
+        <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="Contact-container flex s-around items-center">
+            <div class="form" id="contact-form">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter your Name" required>
+                    </div>
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class="poppins" placeholder="Enter your Email Address" required>
+                    </div>
+                    <div class="phone form-div">
+                        <input type="phone" name="phnumber" id="" class="poppins" placeholder="Enter your Phone Number" required>
+                    </div>
+                    <div class="textarea form-div">
+                        <textarea name="content" id="ntextarea" cols="30" rows="10" class="poppins" placeholder="Enter your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins" id="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppins">Home</a></li>
+            <li><a href="#about" class="poppins">About</a></li>
+            <li><a href="#skills" class="poppins">Skills</a></li>
+            <li><a href="#projects" class="poppins">Projects</a></li>
+            <!-- <li><a href="#portfolio" class="Portfolio">Home</a></li> -->
+        </ul>
+
+        <ul class="flex s-center w-80 font-awesome">
+            <a href="https://www.linkedin.com/in/hari-k-reddy-1ab588192" target="_blank">
+                <li><i class="fa-brands fa-linkedin"></i></li>
+            </a>
+            <a href="https://github.com/GeekyMaestro" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+            <a href="https://instagram.com/mistaken.reptile" target="_blank">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+        </ul>
+        <p class="t-center my-2 poppins">©2024 All Rights Reserved.<span class="cpy-white poppins"> Hari K Reddy</span></p>
+    </footer>
+
+
+</body>
+</html>
